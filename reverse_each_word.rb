@@ -1,8 +1,7 @@
 def reverse_each_word(phrase)
-  phrase2 = phrase.split.collect { |index| phrase[index].reverse }
-  phrase2.split
-  phrase2.each { |index| phrase2[index] = phrase2[index].reverse }
-  phrase2.join.to_s
+  phrase = phrase.split(' ')
+  phrase.each { |index| phrase[index] = phrase[index].reverse }
+  phrase.join.to_s
   return phrase2
 
 end
